@@ -1,5 +1,4 @@
 from Fila import *
-from Pessoa import *
 class FilaPrioridade:
     def __init__(self):
         self._filan = Fila(100)
@@ -14,7 +13,7 @@ class FilaPrioridade:
     def chama(self):
         if not (self._filaP.is_empty()):
             return self._filaP.retira()
-        else:
+        elif not(self._filan.is_empty()):
             return self._filan.retira()
         return None
 
