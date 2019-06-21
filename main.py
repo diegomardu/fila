@@ -11,7 +11,4 @@ while True:
         fila.cadastra(p)
     elif n == 2:
         busca = fila.chama()
-        if busca:
-            print(busca.getNome())
-        else:
-            print(busca)
+        print(busca.getNome())
